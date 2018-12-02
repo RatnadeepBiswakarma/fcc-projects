@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 id="title">Survey Form</h1>
+            <p class="form_heading bold-text" id="description">
+                Let us know how we can improve freeCodeCamp
+            </p>
+        </div>
+        <p id="info">The fields marked with <span>*</span> are mandatory.</p>
+        <form id="survey-form">
+            <div id="input-name">
+                <div class="left-tab">
+                    <label class="bold-text" id="name-label" for="name"><span>*</span>Full Name:</label>
+                </div>
+                <div class="right-tab">
+                    <input name="name" autofocus autocomplete id="name" placeholder="Full Name" type="text" required />
+                </div>
+            </div>
+            <div id="input-email">
+                <div class="left-tab">
+                    <label class="bold-text" id="email-label" for="email"><span>*</span>Email:</label>
+                </div>
+                <div class="right-tab">
+                    <input type="email" name="email" placeholder="Email Address" id="email" required />
+                </div>
+            </div>
+            <div id="input-age">
+                <div class="left-tab">
+                    <label class="bold-text" id="number-label" for="age"><span>*</span>Age:</label>
+                </div>
+                <div class="right-tab">
+                    <input type="number" placeholder="Age" min='1' max='100' name="age" id="number" required />
+                </div>
+            </div>
+            <div id="user-status">
+                <div class="left-tab">
+                    <label class="bold-text" for="role">Which option best describes you?</label>
+                </div>
+                <div class="right-tab">
+                    <select name="role" id="role">
+                        <option disabled value="Select an option">Select an Option</option>
+                        <option value="Student">Student</option>
+                        <option value="Employed">Employed</option>
+                        <option value="SelfEmployed">Self-Employed</option>
+                        <option value="PreferNotToSay">Prefer not to say</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="select-recommend">
+                <div class="left-tab">
+                    <label class="bold-text" for="recommend"><span>*</span>How likely is that you would recommend freeCodeCamp to a
+                        friend?</label>
+                </div>
+                <div class="right-tab">
+                    <input required name="recommend" type="radio" value="Definitely" id="" checked>Definitely<br />
+                    <input required name="recommend" type="radio" value="Maybe" id="">Maybe<br />
+                    <input required name="recommend" type="radio" value="Not sure" id="">Not Sure<br />
+                </div>
+            </div>
+            <div id="likeness">
+                <div class="left-tab">
+                    <label class="bold-text" for="like">What do you like most in FCC</label>
+                </div>
+                <div class="right-tab">
+                    <select name="like" id="dropdown">
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+            </div>
+            <div id="improvements">
+                <div class="left-tab">
+                    <p class="bold-text">
+                        Things that should be improved in the future (Check all that
+                        apply)
+                    </p>
+                </div>
+                <div id="select-checkbox" class="right-tab">
+                    <label> <input type="checkbox" value="FrontEndProject" /> Front End Projects</label>
+                    <label> <input type="checkbox" value="BackEndProject" /> Back End Projects</label>
+                    <label> <input type="checkbox" value="Challenges" /> Challenges</label>
+                    <label> <input type="checkbox" value="Forum" /> Forum</label>
+                    <label> <input type="checkbox" value="Videos" />Videos </label>
+                    <label><input type="checkbox" value="CityMeetups" />City Meetups </label>
+                    <label><input type="checkbox" value="DiscussionForumHelp" />Discussion forum help</label>
+                </div>
+            </div>
+            <div id="comments">
+                <div class="left-tab">
+                    <p class="bold-text">Any comment or suggestion you want you give us:</p>
+                </div>
+                <div class="right-tab">
+                    <textarea name="additional_comments" id="" cols="20" rows="5" placeholder="Enter your opinion..."></textarea>
+                </div>
+            </div>
+            <div class="submit-btn-div">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
