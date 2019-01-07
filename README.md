@@ -20,6 +20,10 @@
 
 ![screen-shot](/Responsive-Web-Design/Product-Landing-Page/img/screen-shot.png)
 
+### Technical Documentation Page see it live [here](https://codepen.io/Ratnadeep/full/zyjeOP)
+
+![screen-shot](/Responsive-Web-Design/technical-documentation-page/img/screen-shot.png)
+
 ### About freeCodeCamp
 
 _freeCodeCamp.org is a tiny non-profit that's helping millions of people learn to code for free._ - freeCodeCamp
