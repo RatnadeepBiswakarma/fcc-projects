@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <title>Technical Documentation Page | FCC Project by Ratnadeep</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="navbar">
+          <header id="page-heading">JavaScript Docs</header>
+          <div class="nav-list">
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link"
+             href="#getting_started">Getting Started</a>
+          
+            <a class="nav-link"
+             href="#javascript_and_java">JavaScript and Java
+            </a>
+            <a class="nav-link" href="#variable">Variable</a>
+            <a class="nav-link" href="#types_of_value">Types of Value</a>
+            <a class="nav-link"
+            href="#conditional_statements">Conditional Statements</a>
+          
+            <a class="nav-link" href="#loops">Loops</a>
+            <a href="#function" class="nav-link">Function</a>
+        </div>
+          
+      </nav>
+      <main id="main-doc">
+        <section id="introduction" class="main-section">
+          <header class="article-header">Introduction</header>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language
+            used to make webpages interactive (e.g. having complex animations,
+            clickable buttons, popup menus, etc.). There are also more advanced
+            server side versions of JavaScript such as Node.Js which allow you
+            to add more functionality to a website than simply downloading files
+            (such as real time collaboration between multiple computers). Inside
+            a host environment (for example, a web browser), JavaScript can be
+            connected to the objects of its environment to provide programmatic
+            control over them.
+          </p>
+
+          <p>
+            JavaScript contains a standard library of objects, such as Array,
+            Date, and Math, and a core set of language elements such as
+            operators, control structures, and statements. Core JavaScript can
+            be extended for a variety of purposes by supplementing it with
+            additional objects; for example:
+          </p>
+          <ul>
+            <li>
+              Client-side JavaScript extends the core language by supplying
+              objects to control a browser and its Document Object Model (DOM).
+              For example, client-side extensions allow an application to place
+              elements on an HTML form and respond to user events such as mouse
+              clicks, form input, and page navigation. Server-side JavaScript
+              extends the core language by supplying objects relevant to running
+              JavaScript on a server. For example, server-side extensions allow
+              an application to communicate with a database, provide continuity
+              of information from one invocation to another of the application,
+              or perform file manipulations on a server.
+            </li>
+            <li>
+              This means that in the browser, JavaScript can change the way the
+              webpage (DOM) looks. And, likewise, Node.js JavaScript on the
+              server can respond to custom requests from code written in the
+              browser.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="getting_started">
+          <header class="article-header">Getting Started</header>
+          <p>
+            Getting started with JavaScript is easy: all you need is a modern
+            Web browser. This guide includes some JavaScript features which are
+            only currently available in the latest versions of Firefox, so using
+            the most recent version of Firefox is recommended. You can start
+            with Chrome or any modern browser, it's totally up to you.
+          </p>
+          <p>
+            There are two tools built into Firefox that are useful for
+            experimenting with JavaScript: the Web Console and Scratchpad.
+          </p>
+        </section>
+        <section class="main-section" id="javascript_and_java">
+          <header class="article-header">JavaScript and Java</header>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript.<br />
+
+            In contrast to Java's compile-time system of classes built by
+            declarations, JavaScript supports a runtime system based on a small
+            number of data types representing numeric, Boolean, and string
+            values. JavaScript has a prototype-based object model instead of the
+            more common class-based object model. The prototype-based model
+            provides dynamic inheritance; that is, what is inherited can vary
+            for individual objects. JavaScript also supports functions without
+            any special declarative requirements. Functions can be properties of
+            objects, executing as loosely typed methods.
+          </p>
+        </section>
+        <section class="main-section" id="variable">
+          <header class="article-header">Variable</header>
+          <p>
+            You use variables as symbolic names for values in your application.
+            The names of variables, called identifiers, conform to certain
+            rules.
+          </p>
+          <p>
+            A JavaScript identifier must start with a letter, underscore (_), or
+            dollar sign ($); subsequent characters can also be digits (0-9).
+            Because JavaScript is case sensitive, letters include the characters
+            "A" through "Z" (uppercase) and the characters "a" through "z"
+            (lowercase).
+          </p>
+          <div class="code-div">
+              <code>
+                  let str = 'hello world!';
+                  console.log(str);
+                  // hello world
+                  let num = 101;
+                  console.log(num); // 101;
+              </code>
+          </div>
+        </section>
+        <section class="main-section" id="types_of_value">
+          <header class="article-header">Types of value</header>
+          <p>JavaScript has six types of primary value :</p>
+          <ol>
+            <li>Boolean</li>
+            <li>Numbers</li>
+            <li>String</li>
+            <li>Null</li>
+            <li>Undefined</li>
+            <li>Symbol</li>
+          </ol>
+          <p>JavaScript has another</p>
+        </section>
+
+        <section class="main-section" id="conditional_statements">
+          <header class="article-header">Conditional Statements</header>
+          <h3>If & else statement</h3>
+          <p>
+            A conditional statement is a set of commands that executes if a
+            specified condition is true. JavaScript supports two conditional
+            statements:
+          </p>
+          <div class="code-div">
+              <code>
+                  if (val === true) {
+                    console.log(true);
+                  } else { console.log(false);
+                  }
+                </code>
+          </div>
+          <h3>Switch Statement</h3>
+          <div class="code-div">
+            <code>
+                switch (fruitType) {
+                  case 'Oranges':
+                    console.log('Oranges are $0.59 a pound.');
+                    break;
+                  case 'Apples':
+                    console.log('Apples are $0.32 a pound.');
+                    break;
+                  case 'Bananas':
+                    console.log('Bananas are $0.48 a pound.');
+                    break;
+                  case 'Cherries':
+                    console.log('Cherries are $3.00 a pound.');
+                    break;
+                  case 'Mangoes':
+                    console.log('Mangoes are $0.56 a pound.');
+                    break;
+                  case 'Papayas':
+                    console.log('Mangoes and papayas are $2.79 a pound.');
+                    break;
+                  default:
+                   console.log('Sorry, we are out of ' + fruittype + '.');
+                }
+                console.log("Is there anything else you'd like?");
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="loops">
+          <header class="article-header">Loops</header>
+          <p>You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction then Y steps in another; for example, the idea "Go five steps to the east" could be expressed this way as a loop:</p>
+          <div class="code-div">
+            <code>
+                let step;
+                for (step = 0; step < 5; step++) {
+                  // Runs 5 times, with values of step 0 through 4.
+                  console.log('Walking east one step');
+                }
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="function">
+          <header class="article-header">Function</header>
+          <p>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
+          <p>For example, the following code defines a simple function named square:</p>
+          <div class="code-div">
+            <code>
+              function square(number) {
+                return number * number;
+              }
+              square(2); // 4
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+      <footer>
+        <p>All information is taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">Mozilla Developer Docs</a></p>
+      </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
