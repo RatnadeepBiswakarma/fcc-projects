@@ -178,6 +178,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        width: auto;
+        margin-left: 60px;
+    }
   .project-tile {
     width: 300px;
     max-width: 400px;
@@ -185,7 +189,9 @@ footer {
   nav > a {
     font-size: 12px;
   }
-  .project-tile > figure {
-    padding: 10px;
+  #social-link {
+      display: flex;
+      flex-direction: column;
+      width: auto;
   }
 }
